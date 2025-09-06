@@ -2,8 +2,10 @@ FROM quay.io/keycloak/keycloak:26.3.2
 
 WORKDIR /opt/keycloak
 
-ENV KEYCLOAK_ADMIN=admin
-ENV KEYCLOAK_ADMIN_PASSWORD=admin
+COPY keycloak.conf /opt/keycloak/conf/
 
-ENTRYPOINT ["/opt/keycloak/bin/kc.sh", "start-dev"]
+RUN /opt/keycloak/bin/kc.sh build
+
+# Comando de inicialização
+ENTRYPOINT ["/opt/keycloak/bin/kc.sh", "start", "--optimized"]
 
