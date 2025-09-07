@@ -658,3 +658,12 @@ ul#kc-totp-supported-apps {
   height: inherit;
   width: 600px;
 }
+
+.container-logo {
+    background-image: url(../img/padoca-logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+    width: 300px;
+    margin: 0 auto 20px auto;
+}

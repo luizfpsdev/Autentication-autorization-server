@@ -85,7 +85,9 @@
 
 <body class="${properties.kcBodyClass!}" data-page-id="login-${pageId}">
 <div class="${properties.kcLoginClass!}">
+    
     <div class="${properties.kcFormCardClass!}">
+    <div class="container-logo"></div>
         <header class="${properties.kcFormHeaderClass!}">
             <#if realm.internationalizationEnabled  && locale.supported?size gt 1>
                 <div class="${properties.kcLocaleMainClass!}" id="kc-locale">
