@@ -660,6 +660,7 @@ ul#kc-totp-supported-apps {
 }
 
 .container-logo {
+  height: 300px;
     display: flex;
     justify-content: center; /* Centraliza horizontal */
     align-items: center;     /* Centraliza vertical */
