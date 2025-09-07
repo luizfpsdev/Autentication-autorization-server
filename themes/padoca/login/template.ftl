@@ -87,7 +87,9 @@
 <div class="${properties.kcLoginClass!}">
     
     <div class="${properties.kcFormCardClass!}">
-    <div class="container-logo"></div>
+    <div class="container-logo">
+     <img src="${url.resourcesPath}/img/padoca-logo.png"     alt="Logo Delícias do Trigo Tia Luiza">
+     </div>
         <header class="${properties.kcFormHeaderClass!}">
             <#if realm.internationalizationEnabled  && locale.supported?size gt 1>
                 <div class="${properties.kcLocaleMainClass!}" id="kc-locale">

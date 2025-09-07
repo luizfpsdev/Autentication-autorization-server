@@ -660,10 +660,14 @@ ul#kc-totp-supported-apps {
 }
 
 .container-logo {
-    background-image: url(../img/padoca-logo.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 300px;
-    width: 300px;
-    margin: 0 auto 20px auto;
+    display: flex;
+    justify-content: center; /* Centraliza horizontal */
+    align-items: center;     /* Centraliza vertical */
+  
+}
+
+.container-logo img {
+    max-width: 300px; /* Ajuste conforme necessário */
+    height: auto;
+
 }
