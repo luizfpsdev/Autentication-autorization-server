@@ -10,3 +10,5 @@ Alteração da imagem do keycloak para gerar uma imagem personalizada, com temas
  - endereço login exemplo: http://localhost:8080/realms/padoca-realm/protocol/openid-connect/auth?client_id=padocamanager&redirect_uri=https%3A%2F%2Fwww.keycloak.org%2Fapp%2F%23url%3Dhttp%3A%2F%2Flocalhost%3A8080%26realm%3Dpadoca-realm%26client%3Dpadocamanager&state=d540cfc0-c037-48b5-8f47-8b050926a885&response_mode=fragment&response_type=code&scope=openid&nonce=388a94e8-61db-4ca8-916a-856a21958ec6&code_challenge=5MdsQ7lcuVHFmEIY4xHtRYxce5VmQ5hnhwJ-TlbE1Tk&code_challenge_method=S256
 
  - endereço login: http://localhost:8080/admin/master/console/#/master/realms
+ - comando para executar o container e mapear a pasta de themas para poder realizar a previsualização em tempo de execução
+ após cada mudança: docker run -d --name padoca-keycloak --restart always --network padoca-network -p 8080:8080 -v $(pwd)/themes/padoca:/opt/keycloak/themes/padoca keycloak-custom:1.21
