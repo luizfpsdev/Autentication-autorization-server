@@ -682,9 +682,16 @@ ul#kc-totp-supported-apps {
     border-bottom-left-radius: 10px;
 }
 
-#visualizacao-senha {
+#visualizacao-senha{
     border-top-right-radius: 10px !important;
     border-bottom-right-radius: 10px !important;
+
+}
+
+#visualizacao-senha::after {
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    background-color: transparent !important;
 }
 
 #input-username{
