@@ -8,5 +8,5 @@ COPY themes /opt/keycloak/themes
 RUN /opt/keycloak/bin/kc.sh build
 
 # Comando de inicialização
-ENTRYPOINT ["/opt/keycloak/bin/kc.sh", "start", "--spi-theme--static-max-age=-1", "--spi-theme--cache-themes=false", "--spi-theme--cache-templates=false","--optimized"]
+ENTRYPOINT ["/opt/keycloak/bin/kc.sh", "start-dev", "--spi-theme--static-max-age=-1", "--spi-theme--cache-themes=false", "--spi-theme--cache-templates=false"]
 
